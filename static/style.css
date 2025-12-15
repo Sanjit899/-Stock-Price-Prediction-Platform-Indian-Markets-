@@ -1,0 +1,151 @@
+/* ===============================
+   Global Styles
+   =============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #f4f6f8, #e8edf2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===============================
+   Main Container
+   =============================== */
+
+.container {
+    background: #ffffff;
+    width: 420px;
+    padding: 30px 35px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+/* ===============================
+   Headings
+   =============================== */
+
+.container h1 {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.container p.subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* ===============================
+   Form Elements
+   =============================== */
+
+form {
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #1e40af;
+    transform: translateY(-1px);
+}
+
+/* ===============================
+   Result Section
+   =============================== */
+
+.result {
+    background: #f9fafb;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.result h3 {
+    font-size: 18px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 16px;
+    color: #374151;
+    margin: 6px 0;
+}
+
+.prediction {
+    font-size: 18px;
+    color: #065f46;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ===============================
+   Footer / Info
+   =============================== */
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* ===============================
+   Mobile Responsive
+   =============================== */
+
+@media (max-width: 480px) {
+    .container {
+        width: 92%;
+        padding: 25px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 10px;
+}
